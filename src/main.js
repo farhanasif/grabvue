@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import jQuery from 'jquery';
+//import jQuery from 'jquery';
+import $ from 'jquery'
 
-window.$ = window.jQuery = jQuery;
+//window.$ = window.jQuery = jQuery;
 
 import 'popper.js';
 import 'bootstrap';
