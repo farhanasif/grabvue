@@ -47,22 +47,28 @@
                             <span>General</span>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fa fa-book"></i>
-                                <span class="menu-text">Documentation</span>
-                                <span class="badge badge-pill badge-primary">Beta</span>
-                            </a>
+                            <router-link to="/admin/overview">
+                                <i class="fa fa-chart-line"></i>
+                                <span class="menu-text">Overview</span>
+                                <!-- <span class="badge badge-pill badge-primary">Beta</span> -->
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/admin/products/">
+                                <i class="fa fa-archive"></i>
+                                <span class="menu-text">Products</span>
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/admin/orders">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="menu-text">Orders</span>
+                            </router-link>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-calendar"></i>
-                                <span class="menu-text">Calendar</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-folder"></i>
-                                <span class="menu-text">Examples</span>
+                                <i class="fa fa-power-off"></i>
+                                <span class="menu-text">Logout</span>
                             </a>
                         </li>
                     </ul>
@@ -75,39 +81,7 @@
         </a>
         <!-- page-content  -->
         <main class="page-content pt-2">
-            <div id="overlay" class="overlay"></div>
-            <div class="container-fluid p-5">
-                <div class="row">
-                    <div class="form-group col-md-12">
-                        <h2>Pro Sidebar</h2>
-                        <p>This is a responsive sidebar template with dropdown menu based on bootstrap framework.</p>
-
-                    </div>
-                    <div class="form-group col-md-12">
-                        <iframe
-                            src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=star&count=true&size=small"
-                            frameborder="0" scrolling="0" width="100px" height="30px"></iframe>
-                        <iframe
-                            src="https://ghbtns.com/github-btn.html?user=azouaoui-med&repo=pro-sidebar-template&type=fork&count=true&size=small"
-                            frameborder="0" scrolling="0" width="100px" height="30px"></iframe>
-                    </div>
-
-                    <div class="form-group col-md-12">
-                        <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#">
-                            <span>Toggle Sidebar</span>
-                        </a>
-                        <a id="pin-sidebar" class="btn btn-outline-secondary rounded-0" href="#">
-                            <span>Pin Sidebar</span>
-                        </a>
-
-                    </div>
-                </div>
-                <hr>
-                
-
-
-                
-            </div>
+            <router-view/>
         </main>
         <!-- page-content" -->
     </div>
